@@ -1,0 +1,73 @@
+[
+  {
+    "model": "books.book",
+    "pk": 1,
+    "fields": {
+      "title": "Quo Vadis",
+      "pages": 200,
+      "authors": [
+        1
+      ]
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 2,
+    "fields": {
+      "title": "Potop",
+      "pages": 200,
+      "authors": [
+        1
+      ]
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 3,
+    "fields": {
+      "title": "Ogniem i Mieczem",
+      "pages": 300,
+      "authors": [
+        1
+      ]
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 4,
+    "fields": {
+      "title": "Antek",
+      "pages": 30,
+      "authors": [
+        2
+      ]
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 5,
+    "fields": {
+      "title": "Lalka",
+      "pages": 150,
+      "authors": [
+        2
+      ]
+    }
+  },
+  {
+    "model": "books.author",
+    "pk": 1,
+    "fields": {
+      "first_name": "Henryk",
+      "last_name": "Sienkiewicz"
+    }
+  },
+  {
+    "model": "books.author",
+    "pk": 2,
+    "fields": {
+      "first_name": "Boles\u0142aw",
+      "last_name": "Prus"
+    }
+  }
+]
