@@ -126,16 +126,17 @@ STATIC_URL = '/static/'
 REST_FRAMEWORK = {
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
     'PAGE_SIZE': 10,
-    'DEFAULT_AUTHENTICATION_CLASSES': [
-        'rest_framework_simplejwt.authentication.JWTTokenUserAuthentication',
-    ],
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+        # 'rest_framework_simplejwt.authentication.JWTTokenUserAuthentication',
+    ),
 }
 
-JWT_PRIVATE_KEY_PATH = 'rsa_key'
-JWT_PUBLIC_KEY_PATH = 'rsa_key.pub'
-
-SIMPLE_JWT = {
-    'ALGORITHM': 'RS256',
-    'SIGNING_KEY': open(JWT_PRIVATE_KEY_PATH).read(),
-    'VERIFYING_KEY': open(JWT_PUBLIC_KEY_PATH).read(),
-}
+# JWT_PRIVATE_KEY_PATH = 'rsa_key'
+# JWT_PUBLIC_KEY_PATH = 'rsa_key.pub'
+#
+# SIMPLE_JWT = {
+#     'ALGORITHM': 'RS256',
+#     'SIGNING_KEY': open(JWT_PRIVATE_KEY_PATH).read(),
+#     'VERIFYING_KEY': open(JWT_PUBLIC_KEY_PATH).read(),
+# }
