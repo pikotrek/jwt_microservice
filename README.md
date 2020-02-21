@@ -4,6 +4,16 @@ An example of using JWT as a microservice.
 
 ### Usage
 
+1. Create `.env` file in both `authenticator` and `books_catalog`using this template:
+   ```
+   SECRET_KEY={your_secret_key}
+   ALLOWED_HOSTS=0.0.0.0
+   POSTGRES_HOST=books_db
+   POSTGRES_PORT=5432
+   POSTGRES_USER={your_user}
+   POSTGRES_PASSWORD={your_password}
+   POSTGRES_DB=books
+   ```
 1. Run `docker-compose -up -d` to run both services
 1. Apply migrations on both: `docker exec -it {container_name} ./manage.py migrate`
 1. Create users or superusers: `docker exec -it {container_name} ./manage.py createsuperuser`
